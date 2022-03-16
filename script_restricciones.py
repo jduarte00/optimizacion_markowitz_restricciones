@@ -9,6 +9,7 @@ solvers.options['show_progress'] = False
 # ---------------------------
 # CARGA DE DATOS
 retpor = pd.read_csv('./retpor.csv', index_col=  'Date')
+print(retpor.head(4))
 # ---------------------------
 # CÁLCULO DE PARÁMETROS
 E = np.cov(retpor.T)
